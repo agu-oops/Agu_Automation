@@ -3,7 +3,7 @@ package payment;
 public class PaymentForm {
     public static String processPayment(String method, double amount, String details) {
         if (details.isEmpty()) throw new IllegalArgumentException("Payment details missing");
-        return "Processing $" + amount + " via " + method + " with details: " + details;
+        return "Processing $" + amount + " via " + method;
     }
 
     public static void main(String[] args) {
